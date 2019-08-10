@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha index.test.js --colors",
-    "test:errorstop": "mocha index.test.js -b --colors",
-    "test:watch": "onchange \"./*.js\" -- npm run test:errorstop"
+    "test:calculateDistancePoints": "mocha calculateDistancePoints.test.js -b --colors",
+    "test:watch": "onchange \"./*.js\" -- npm run test"
   },
   "repository": {
     "type": "git",

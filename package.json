@@ -1,0 +1,26 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js --colors",
+    "test:errorstop": "mocha index.test.js -b --colors",
+    "test:watch": "onchange \"./*.js\" -- npm run test:errorstop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geestaq/unit-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geestaq/unit-test/issues"
+  },
+  "homepage": "https://github.com/geestaq/unit-test#readme",
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "onchange": "^6.0.0"
+  }
+}

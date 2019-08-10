@@ -19,7 +19,7 @@ const calculateDistancePoints = (distance, hillSize, kPoint) => {
 
   //wyliczenie punktow
   const points = basePoints + ((distance - kPoint) * deltaPointsPerMeter);
-  return points > 0 ? points : 0;
+  return points > 0 ? Math.round(points * 10) / 10 : 0;
 };
 
 module.exports = calculateDistancePoints;
